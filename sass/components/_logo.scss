@@ -1,0 +1,27 @@
+.link > span {
+  font-family: Raleway;
+  color: $primary-accent-color;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.logo,
+.logo-footer {
+  color: $hr-text-color;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.logo-footer {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
