@@ -1,21 +1,73 @@
+// .team {
+//   background-color: $secondary-bg-color;
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+
+//   &-list {
+//     display: flex;
+//     width: 1170px;
+//     margin-top: 50px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     justify-content: space-between;
+//   }
+
+//   &-title {
+//     font-weight: bold;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $hr-text-color;
+//     margin: 0;
+//   }
+
+//   &-name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     letter-spacing: 0.03em;
+//     text-align: center;
+//     color: $hr-text-color;
+//     margin-top: 30px;
+//     margin-bottom: 10px;
+//   }
+
+//   &-pos {
+//     font-size: 16px;
+//     line-height: 1.18;
+//     letter-spacing: 0.03em;
+//     text-align: center;
+//     color: $primary-text-color;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
+
+//   &-card {
+//     width: 270px;
+//     height: 428px;
+//     background: #ffffff;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//   }
+// }
+
 .team {
   background-color: $secondary-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &-list {
-    display: flex;
-    width: 1170px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+    max-width: 480px;
+    width: 100%;
+    padding-top: 30px;
   }
 
   &-title {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.171;
     text-align: center;
     letter-spacing: 0.03em;
     color: $hr-text-color;
@@ -23,7 +75,7 @@
   }
 
   &-name {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -44,11 +96,15 @@
   }
 
   &-card {
-    width: 270px;
-    height: 428px;
+    width: 100%;
+    height: auto;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+
+  &-card:not(:first-child) {
+    margin-top: 30px;
   }
 }

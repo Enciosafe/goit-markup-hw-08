@@ -1,22 +1,51 @@
+// .link > span {
+//   font-family: Raleway;
+//   color: $primary-accent-color;
+//   font-size: 26px;
+//   font-weight: 700;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   text-align: left;
+// }
+
+// .logo,
+// .logo-footer {
+//   color: $hr-text-color;
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   margin-top: 24px;
+//   margin-bottom: 25px;
+// }
+
+// .logo-footer {
+//   color: #ffffff;
+//   display: inline-block;
+//   margin-bottom: 20px;
+//   margin-top: 0;
+// }
+
 .link > span {
   font-family: Raleway;
   color: $primary-accent-color;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.166;
   letter-spacing: 0.03em;
-  text-align: left;
+  // text-align: left;
 }
 
 .logo,
 .logo-footer {
+  font-family: Raleway;
   color: $hr-text-color;
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
