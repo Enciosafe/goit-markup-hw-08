@@ -150,6 +150,10 @@
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .head {
@@ -191,8 +195,6 @@
 
   @media screen and (min-width: 767px) {
     display: none;
-    // align-items: center;
-    // justify-content: space-between;
   }
 }
 
@@ -218,6 +220,7 @@
 
   @media screen and (min-width: 767px) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -230,6 +233,20 @@
   letter-spacing: 0.02em;
   display: inline-block;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.142;
+
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+.nav-links {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav {
@@ -241,12 +258,21 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.16;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.166;
+    }
   }
 
   &-link-active {
     position: relative;
     color: $primary-accent-color;
     margin-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &-link-active::after {
@@ -259,6 +285,10 @@
     height: 4px;
     border-radius: 2px;
     background-color: $primary-accent-color;
+
+    @media screen and (min-width: 768px) {
+      bottom: -32px;
+    }
   }
 
   &-link:hover,
@@ -279,14 +309,14 @@
     color: $primary-text-color;
     display: inline-block;
     margin-left: 10px;
-    margin-top: 16px;
-    padding-bottom: 60px;
-  }
+    margin-top: 10px;
+    padding-bottom: 21px;
 
-  // &-contacts {
-  //   display: flex;
-  //   align-items: center;
-  // }
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.166;
+    }
+  }
 
   &-contacts:hover,
   &-contacts:focus {
@@ -294,26 +324,19 @@
     color: $primary-accent-color;
   }
 
-  // &-icon-tel {
-  //   margin-left: 30px;
-  // }
+  .icon-mail,
+  .icon-tel {
+    fill: currentColor;
+  }
 
-  // &-icon-mail {
-  //   margin-left: 305px;
-  // }
-
-  // &-mail {
-  //   margin-left: 10px;
-  // }
+  &-contacts {
+    @media screen and (min-width: 768px) {
+      padding-left: 35px;
+    }
+  }
 }
 
-.icon-mail,
-.icon-tel {
-  fill: currentColor;
+.nav.icon-mail {
+  width: 16px;
+  height: 12px;
 }
-
-// .items {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
