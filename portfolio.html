@@ -19,38 +19,55 @@
         <div class="head">
             <div class="container">
                 <nav class="head-container">
-                    <a class="logo link" href="./index.html"><span>Web</span>Studio</a>
-                    <ul class="nav list">
-                        <li><a class="nav-link link" href="./index.html">Студия</a></li>
-                        <li><a class="nav-link-active link" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="nav-link link" href="#">Контакты</a></li>
-                    </ul>
+                    <div class="head-box">
+                        <a class="logo link" href="./index.html"><span>Web</span>Studio</a>
+                        <button type="button" class="menu-button-mobile" aria-expanded="false" aria-controls="menu-container-mobile"
+                            data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon-menu-mobile" href="./images/sprite.svg#icon-menu_mobile"></use>
+                                <use class="icon-close-mobile" href="./images/sprite.svg#icon-close_mobile"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-container-mobile" id="menu-container-mobile" data-menu>
+                            <ul class="nav list">
+                                <li><a class="nav-link-active link" href="#">Студия</a></li>
+                                <li><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
+                                <li><a class="nav-link link" href="#">Контакты</a></li>
+                            </ul>
             
-                    <ul class="list nav items">
-                        <li class="list nav items">
-                            <div class="contacts-nav">
-                                <svg class="nav-icon-mail" width="16" height="12">
-                                    <use class="icon-mail" href="./images/sprite.svg#icon-mail"></use>
-                                </svg>
-                                <a class="nav-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                            </div>
-                        </li>
+                            <ul class="nav list items">
+                                <li class="nav list items">
+                                    <div class="nav-contacts">
+                                        <svg class="nav-icon-mail" width="16" height="12">
+                                            <use class="icon-mail" href="./images/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                        <a class="nav-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                    </div>
+                                </li>
             
-                        <li class="list nav items">
-                            <div class="contacts-nav">
-                                <svg class="nav-icon-tel" width="10" height="16">
-                                    <use class="icon-tel" href="./images/sprite.svg#icon-tel"></use>
-                                </svg>
-                                <a class="nav-tel link" href="tel:380961111111">+38 096 111 11 11</a>
-                            </div>
-                        </li>
-                    </ul>
+                                <li class="nav list items">
+                                    <div class="nav-contacts">
+                                        <svg class="nav-icon-tel" width="10" height="16">
+                                            <use class="icon-tel" href="./images/sprite.svg#icon-tel"></use>
+                                        </svg>
+                                        <a class="nav-tel link" href="tel:380961111111">+38 096 111 11 11</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+            
+            
+            
+            
+            
                 </nav>
             </div>
         </div>
         
-    </header>
-    <!--КОНЕЦ ШАПКИ-->
+        </header>
+        <!--КОНЕЦ ШАПКИ-->
 
     <main>
         <!-- ПОРТФОЛИО -->
@@ -69,7 +86,7 @@
                     <li class="cards">
                         <a class="product-cards link" href="">
                             <div class="overlay-img">
-                                <img src="./images/port1.jpg" alt="ноутбук" />
+                                <img src="./images/port1-mob.jpg" alt="ноутбук"/>
                                 <p class="product-label">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
                                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -264,6 +281,7 @@
         </div>
     </footer>
     <!--КОНЕЦ ПОДВАЛА-->
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
