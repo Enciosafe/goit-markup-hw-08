@@ -107,15 +107,30 @@
   overflow: hidden;
   padding-bottom: 30px;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &-cards {
     display: block;
 
     height: 404px;
 
+    @media screen and(min-width:768px) {
+      height: auto;
+    }
+
     background: #ffffff;
     border: 1px solid #eeeeee;
     // margin-right: 30px;
     margin-bottom: 30px;
+
+    @media screen and(min-width:768px) {
+      width: 354px;
+    }
   }
 
   &-label {

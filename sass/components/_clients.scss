@@ -68,6 +68,10 @@
   width: 210px;
   height: 90px;
 
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
