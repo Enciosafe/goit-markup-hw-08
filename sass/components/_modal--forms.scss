@@ -150,3 +150,9 @@
 
   color: var(--hr-text-color);
 }
+
+.modal-container {
+  @media screen and (min-width: $desktop) {
+    max-width: 448px;
+  }
+}
