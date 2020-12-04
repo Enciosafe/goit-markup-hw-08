@@ -154,29 +154,32 @@ body.modal-open {
     margin-bottom: 2px;
     padding: 0;
   }
+}
 
-  &-btn-close:hover {
-    fill: $primary-accent-color;
-    transition: $hover-animation;
-    transform: rotate(180deg);
-    cursor: pointer;
-  }
+&-btn-close:hover {
+  fill: $primary-accent-color;
+  transition: $hover-animation;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
 
-  &-title {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.15;
-    // white-space: wrap;
-    letter-spacing: 0.03em;
-    text-align: center;
+&-title {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
 
-    margin-top: 40px;
-    margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 12px;
 
-    color: $hr-text-color;
-  }
+  color: $hr-text-color;
+
+  // @media screen and (min-width: $desktop) {
+  //   white-space: nowrap;
+  // }
 }
 
 .svg-btn {

@@ -81,6 +81,10 @@
 
 .footer-form {
   display: block;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form-title {
@@ -99,12 +103,17 @@
   width: 100%;
   height: 50px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $desktop) {
     width: 450px;
     display: block;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    display: block;
   }
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -154,6 +163,11 @@
   cursor: pointer;
 
   color: #ffffff;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .form-btn:after {
@@ -167,4 +181,10 @@
 
 .form-btn:hover {
   background-color: #188ce8;
+}
+
+.form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }

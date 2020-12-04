@@ -103,6 +103,11 @@
       justify-content: center;
     }
     flex-wrap: wrap;
+
+    @media screen and(min-width:$desktop) {
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
   }
 
   &-nav-btn:hover,

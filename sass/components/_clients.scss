@@ -68,8 +68,8 @@
   width: 210px;
   height: 90px;
 
-  @media screen and (min-width: $tablet) {
-    width: 226px;
+  @media screen and (max-width: 479px) {
+    width: calc((100% - 30px) / 2);
   }
 
   border: 1px solid #afb1b8;
@@ -80,6 +80,15 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    margin-bottom: 0;
+  }
 }
 
 .client-item {
@@ -105,6 +114,10 @@
   justify-content: space-between;
   padding-bottom: 30px;
 
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
+
   &-title {
     font-weight: bold;
     font-size: 28px;
@@ -114,5 +127,9 @@
     color: $hr-text-color;
     margin-top: 60px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 94px;
+    }
   }
 }

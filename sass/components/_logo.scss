@@ -33,7 +33,11 @@
   font-weight: 700;
   line-height: 1.166;
   letter-spacing: 0.03em;
-  // text-align: left;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo,
@@ -42,10 +46,15 @@
   color: $hr-text-color;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.19;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   margin-top: 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-footer {

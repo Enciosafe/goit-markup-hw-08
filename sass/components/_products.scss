@@ -107,11 +107,17 @@
   overflow: hidden;
   padding-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
   }
 
   &-cards {
@@ -125,11 +131,14 @@
 
     background: #ffffff;
     border: 1px solid #eeeeee;
-    // margin-right: 30px;
     margin-bottom: 30px;
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:$tablet) {
       width: 354px;
+    }
+
+    @media screen and(min-width:$desktop) {
+      width: 370px;
     }
   }
 
@@ -168,5 +177,11 @@
   &-cards:hover &-label,
   &-cards:focus &-label {
     transform: translateY(0);
+  }
+}
+
+.product.list {
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 64px;
   }
 }

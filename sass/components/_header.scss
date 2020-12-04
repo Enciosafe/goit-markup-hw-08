@@ -154,6 +154,10 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+  }
 }
 
 .head {
@@ -169,6 +173,10 @@
 
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    height: 80px;
+  }
 }
 
 .menu-button-mobile {
@@ -247,6 +255,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 255px;
+  }
 }
 
 .nav {
@@ -262,6 +274,12 @@
     @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: 1.166;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 1.142;
     }
   }
 
@@ -316,6 +334,13 @@
       font-size: 12px;
       line-height: 1.166;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      padding-bottom: 0;
+      font-size: 14px;
+      line-height: 1.142;
+    }
   }
 
   &-contacts:hover,
@@ -333,10 +358,22 @@
     @media screen and (min-width: 768px) {
       padding-left: 35px;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    }
   }
 }
 
 .nav.icon-mail {
   width: 16px;
   height: 12px;
+}
+
+.nav.list {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
