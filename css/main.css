@@ -1396,7 +1396,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .form-input {
     width: 450px;
     display: block;
@@ -1411,6 +1411,9 @@ body {
   .form-input {
     width: 358px;
     display: block;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
