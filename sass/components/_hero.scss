@@ -18,7 +18,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url("../images/desktop/header-desk.jpg");
+    background-image: url("../images/bg-hero.jpg");
   }
 
   text-align: center;
@@ -37,7 +37,7 @@
     margin: 0 auto;
     margin-top: 0;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 44px;
       line-height: 60px;
       width: 696px;

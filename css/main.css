@@ -488,7 +488,7 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button-mobile {
     display: none;
   }
@@ -515,7 +515,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-container-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,14 +697,26 @@ body {
 
 .hero {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/header.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-color: #2f303a;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/tablet/header-tabl.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/bg-hero.jpg");
+  }
 }
 
 .hero-h {
@@ -931,7 +943,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 64px;
   }
 }
 
@@ -1019,12 +1031,14 @@ body {
 @media screen and (min-width: 768px) {
   .team-card {
     width: calc((100% - 30px) / 2);
+    height: 536px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-card {
     width: 270px;
+    height: 428px;
   }
 }
 
@@ -1719,12 +1733,6 @@ body.modal-open {
 .modal-container {
   padding-left: 40px;
   padding-right: 40px;
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-container {
-    max-width: 441px;
-  }
 }
 
 .modal-btn-close {
