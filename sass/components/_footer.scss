@@ -9,6 +9,7 @@
   @media screen and (min-width: $desktop) {
     padding-bottom: 60px;
     text-align: left;
+    height: 252px;
   }
 
   padding-bottom: 60px;
@@ -61,6 +62,10 @@
     margin-bottom: 0;
 
     color: #ffffff;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 72px;
+    }
   }
 
   &-social {

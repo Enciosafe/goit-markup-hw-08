@@ -1256,6 +1256,7 @@ body {
   .footer {
     padding-bottom: 60px;
     text-align: left;
+    height: 252px;
   }
 }
 
@@ -1310,6 +1311,12 @@ body {
   margin-top: 60px;
   margin-bottom: 0;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-top: 72px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1447,6 +1454,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1650,6 +1658,7 @@ body {
 @media screen and (min-width: 1200px) {
   .product-cards {
     width: 370px;
+    height: 404px;
   }
 }
 
@@ -1925,9 +1934,21 @@ body.modal-open {
   pointer-events: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .custom-box {
+    margin-left: 50px;
+  }
+}
+
 .form-input-check {
   opacity: 0;
   margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input-check {
+    margin-left: 50px;
+  }
 }
 
 .form-input-check:checked + .custom-box {

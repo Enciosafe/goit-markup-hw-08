@@ -38,11 +38,19 @@
   background-image: url(../images/empty-checkbox.svg);
   background-repeat: no-repeat;
   pointer-events: none;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+  }
 }
 
 .form-input-check {
   opacity: 0;
   margin-right: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+  }
 
   &:checked + .custom-box {
     position: absolute;
